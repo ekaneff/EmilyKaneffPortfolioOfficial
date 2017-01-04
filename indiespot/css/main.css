@@ -1,0 +1,582 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+	color: #494949;
+}
+
+h1, h2 {
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	overflow: hidden;
+}
+
+h1 {
+	float: left;
+	width: 21.02312544%; /* 300 / 1427 */
+	color: #009FB7;
+	margin-left: 2.102312544%; 
+}
+
+h1 a {
+	color: #009FB7;
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 3em;
+	color: #B02E0C;
+	text-align: center;
+}
+
+nav {
+	float: right;
+	width: 42.04625088%; /* 600 */
+	overflow: hidden;
+}
+
+nav ul {
+	float: right;
+	list-style: none;
+	padding: 0;
+	overflow: hidden;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+nav li {
+	float: left;
+	width: 92px;
+	text-align: center;
+}
+
+nav li a {
+	text-align: center;
+	text-decoration: none;
+	color: #494949;
+	display: block;
+	padding: 32px 20px;
+	-webkit-transition: background .5s; /* Safari */
+    transition: background .5s;
+}
+
+li a:hover {
+	background: #FED766;
+}
+
+img {
+	max-width: 100%;
+}
+
+.button {
+	width: 100px;
+	padding: 10px; /* 10 / 100 */
+	background: #FED766;
+	font-size: 1.25em;
+	border-radius: 5px;
+	color: #515151;
+	-webkit-transition: background .5s; /* Safari */
+    transition: background .5s;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button a {
+	color: #494949;
+	text-decoration: none;
+	display: block;
+}
+
+.button:hover {
+	background: #b8d5b8;
+}
+
+.container {
+	width: 73.580939032936%; /* 1050 / 1427 */
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 2.857142857%; /* 30 / 1050 */
+	
+}
+
+.active {
+	background: #FED766;
+}
+
+/* intro
+==============================*/
+
+#intro {
+	text-align: center;
+	padding-top: 11.80555556%; /* 170 / 1440 */
+	background-image: url('../images/introBg.png');
+	height: 400px;
+}
+
+#intro p {
+	font-size: 1.5em;
+}
+
+/* now playing 
+==============================*/
+
+#nowPlaying {
+	overflow: hidden;
+	background-color: #FFA69E;
+}
+
+#nowPlaying .button {
+	margin: 0 auto;
+}
+
+#npCard {
+	width: 47.61904762%; /* 500 / 1050 */
+	float: left;
+	text-align: center;
+}
+
+#nowPlaying article:last-child {
+	margin-left: 4.761904762%; /* 50 / 1050 */ 
+}
+
+#nowPlaying h3 a {
+	font-size: 2em;
+	color: #B02E0C;
+	font-weight: 600;
+	font-style: italic;
+	text-decoration: none;
+	border-bottom: 2px solid #B02E0C;
+}
+
+
+
+/* events 
+==============================*/
+
+#events {
+	background-image: url('../images/eventBg.png');
+}
+
+#eventCard {
+	overflow: hidden;
+	margin-bottom: 4.761904762%; /* 50 / 1050 */
+
+}
+
+#events img {
+	border-radius: 50%;
+	float: left;
+}
+
+.info {
+	width: 47.61904762%; /* 500 / 1050 */
+	float: left;
+	margin-left: 9.523809524%; /* 100 / 1050 */
+	padding-top: 2%; /* 20 / 500 */
+}
+
+.info h3 {
+	color: #B02E0C;
+	font-size: 1.5em;
+}
+
+.info h3 a {
+	text-decoration: none;
+	display: block;
+	color: #B02E0C;
+}
+
+/* footer
+==============================*/ 
+
+footer {
+	overflow: hidden;
+	font-style: italic;
+	clear: right;
+	background: #e7e7e7;
+}
+
+footer article {
+	float: left;
+	margin-left: 2.102312544%; 
+}
+
+footer article:last-of-type {
+	float: right;
+	text-align: right;
+	margin-right: 2.102312544%; 
+}
+
+footer article h4 {
+	color: #B02E0C;
+}
+
+
+/* film info page
+==============================*/ 
+
+#topImg img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#aside {
+	float: right;
+	width: 23.47582341%; /* 335 / 1427 */
+	margin-top: 1.401541696%; /* 20 / 1427 */
+	margin-right: 3.50385424%; /* 50 / 1427 */
+}
+
+aside {
+	padding: 4.47761194%; /* 15 / 335 */
+	text-align: left;
+	background: rgba(254, 215, 102, .7); 
+}
+
+aside ul {
+	list-style: none;
+	margin-top: 1.492537313%; /* 5 / 335 */
+	border-top: 2px dotted #494949;
+	border-bottom: 2px dotted #494949;
+	width: 59.70149254%; /* 200 / 335 */
+}
+
+aside a{
+	line-height: 30px;
+	font-style: italic;
+	text-decoration: none;
+	color: #494949;
+}
+
+aside li a:hover {
+	background: transparent;
+}
+
+aside h2 {
+	font-size: 2.5em;
+	text-align: left;
+	margin-bottom: 0;
+	margin-top: 1.492537313%; /* 5 / 335 */
+}
+
+
+img[src*=feature-lights]{
+	height: 7.5%;
+	width: 28.57142857%; /* 200 / 700 */
+	margin-top: 2%; /* 200 / 700 */
+}
+
+#feature .container {
+	width: 48.61111111%; /* 700 / 1440 */
+	margin: auto;
+}
+
+#feature h2 {
+	text-align: left;
+	padding-bottom: .8333333333%; /* 5 / 600 */
+	border-bottom: 2px solid #494949;
+	width: 60%; /* 600 / 1000 */
+}
+
+#feature h3 {
+	color: #B02E0C;
+	font-size: 2em;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: .8333333333%;
+	border-bottom: 2px solid #494949;
+	width: 60%;
+}
+
+#reviews p {
+	color: #009FB7;
+	font-size: 1.10em;
+	line-height: 30px;
+}
+
+p span {
+	font-weight: 600;
+}
+
+.source {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.synp p:last-of-type{
+	font-size: .8em
+}
+
+/* events page
+==============================*/
+
+#event .container {
+	width: 48.61111111%; /* 700 / 1440 */
+	margin: auto;
+	margin-top: 1.388888889%; /* 20 / 1440 */
+}
+
+#event img {
+	height: 7.142857143%; /* 50 / 700 */
+	width: 57.14285714%; /* 400 / 700 */
+	margin-top: 2%; 
+}
+
+#event h2 {
+	text-align: left;
+	padding-bottom: .8333333333%; /* 5 / 600 */
+	border-bottom: 2px solid #494949;
+	width: 100%; 
+}
+
+#movieList h3 {
+	color: #B02E0C;
+	font-size: 2em;
+	margin-top: 0;
+	padding-bottom: .4721435316%; /* 5 / 1059 */
+	border-bottom: 2px solid #494949;
+}
+
+.movieCard img {
+	margin: 0;
+	float: left;
+	margin-right: 2.298850575%; /* 20 / 870 */
+}
+
+.movieCard h4 {
+	margin-top: 0;
+	font-size: 1.25em;
+	color: #B02E0C;
+}
+
+.movieCard {
+	overflow: hidden;
+	margin-bottom: 4.721435316%; /* 50 / 1059 */
+	width: 82.1529745%; /* 870 / 1059 */
+}
+
+
+/* media queries 
+====================================*/
+
+@media screen and (min-width: 660px) and (max-width: 986px) {
+
+	#events .container {
+		width: auto;
+		margin: auto;
+	}
+
+	#events img {
+		float: none; 
+	}
+
+	#eventCard {
+		width: 40.56795132%; /* 400 / 986 */
+		margin: 0 auto;
+		margin-bottom: 3.042596349%; /* 30 / 986 */
+	}
+
+	.info {
+		float: none;
+		width: auto;
+	}
+
+	#aside {
+		float: none;
+		width: auto;
+	}
+
+	aside {
+		text-align: left;
+		background: none; 
+	}
+
+	aside ul {
+		width: auto;
+		background:rgba(254, 215, 102, .7);
+	}
+
+	aside a {
+		line-height: 40px;
+		font-size: 1.15em;
+	}
+
+	#feature h2 {
+		width: auto;
+	}
+
+	#reviews {
+		display: none;
+	}
+
+	#feature .container {
+		width: auto; 
+		margin-left: 30px;
+	}
+
+	#event .container {
+		width: auto; 
+		margin-left: 30px;
+	}
+
+	#movieList .container {
+		width: auto; 
+		margin-left: 30px;
+	}
+
+	.movieCard img {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 661px) {
+
+	h1 {
+		width: 200px;
+		float: none;
+		margin-left: 20px;
+	}
+
+	header {
+		padding-bottom: 10px;
+		border-bottom: 2px solid #494949;
+	}
+
+	nav {
+		float: none;
+		width: auto; 
+	}
+
+	nav ul {
+		float: none;
+		list-style: none;
+	}
+
+	nav li {
+		float: left;
+		width: 110px;
+	}
+
+	#npCard {
+		width: auto;
+		float: none;
+		margin-bottom: 50px;
+	}
+
+	#nowPlaying article:last-child {
+		margin-left: 0; 
+	}
+
+	#eventCard {
+		margin-bottom: 30px; /* 30 / 986 */
+	}
+
+	.info {
+		width: auto;
+	}
+
+	footer article {
+		float: none;
+	}
+
+	footer article:last-of-type {
+		float: none;
+		text-align: left;
+		margin-right: 0; 
+	}
+
+	#topImg {
+		display: none;
+	}
+
+	#aside {
+		float: none;
+		width: auto;
+	}
+
+	aside {
+		text-align: left;
+		background: none; 
+	}
+
+	aside ul {
+		width: auto;
+		background:rgba(254, 215, 102, .7);
+	}
+
+	aside a {
+		line-height: 40px;
+		font-size: 1.15em;
+	}
+
+	#reviews {
+		display: none;
+	}
+
+	.container img {
+		height: auto;
+		width: auto;
+	}
+
+	#feature h2 {
+		width: auto;
+		font-size: 2.5em;
+	}
+
+	#reviews {
+		display: none;
+	}
+
+	#feature .container {
+		width: auto; 
+		margin: 0 20px 0 20px;
+	}
+
+	#event img {
+		height: auto;
+		width: auto;
+	}
+
+	#event h2 {
+		width: auto;
+		font-size: 2.5em;
+	}
+
+	#event .container {
+		width: auto; 
+		margin: 0 20px 0 20px;
+	}
+
+	#movieList .container {
+		width: auto; 
+		margin: 0 20px 0 20px;
+	}
+
+	.movieCard img {
+		display: none;
+	}
+
+	iframe {
+		width: auto;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
