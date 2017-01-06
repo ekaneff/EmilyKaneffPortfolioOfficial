@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link href="https://fonts.googleapis.com/css?family=Crete+Round|Open+Sans" rel="stylesheet">
+  		<link rel="stylesheet" href="css/main.css">
+		<title>RecipeBox</title>
+	</head>
+	<body>
+		
+		<nav>
+			<div class="container">
+				<h1><a href="dashboard.html" class="brand">RecipeBox</a></h1>
+				<ul>
+					<li><a href="#">Shop Online</a></li>
+					<li><a href="#">Recipes</a></li>
+					<li><a href="#">Meal Plans</a></li>
+					<li class="account"><a href="#">My Account</a>
+						<ul>
+							<li><a href="myRecipes.html" id="myRecipes">My Recipes</a></li>
+							<li><a href="accountSettings.html" id="settings">Account Settings</a></li>
+							<li><a href="#" id="logout">Sign Out</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<header id="myRecipesHead">
+			<div class="container">
+				<section>
+					<h1>My Recipes</h1>
+				</section>
+			</div>
+		</header>
+
+		<section id="recipes">
+		<div class="container">
+			<button type="button" id="newRecp" class="btn">New Recipe</button>
+			
+				<form id="recpForm"> 
+				<p><label>Recipe Name: <input type="text" maxlength="40" id="projectName" /></label></p>
+				<p><label>Recipe Description: <input type="textarea" maxlength="50" id="projectDescription" /></label></p>
+				<p><label>Total Cook Time: <input type="text" maxlength="20" rows="4" id="projectDueDate" /></label></p>
+				<p><label>Rating:</label>
+					<label class="mystatus">
+						<input type="radio" name="status" id="1"> 1
+					</label>
+					<label class="mystatus">
+						<input type="radio" name="status" id="2"> 2
+					</label>
+					<label class="mystatus">
+						<input type="radio" name="status" id="3"> 3
+					</label>
+					<label class="mystatus">
+						<input type="radio" name="status" id="4"> 4
+					</label>
+					<label class="mystatus">
+						<input type="radio" name="status" id="5"> 5
+					</label>
+				</p>
+				<button type="button" id="addbutton" class="btn">Add</button>
+				</form>
+			</div>
+		</section>
+
+	<!-- 	<div class="projects">
+
+		</div> -->
+
+
+		<footer>
+			<div class="container">
+				<section>
+					<h6>Services and Support</h6>
+					<ul>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Sales Information</a></li>
+						<li><a href="#">Product Recalls</a></li>
+					</ul>
+				</section>
+				<section>
+					<h6>Shipping and Returns</h6>
+					<ul>
+						<li><a href="#">Shipping Policy</a></li>
+						<li><a href="#">Online Returns</a></li>
+						<li><a href="#">Return Policy</a></li>
+						<li><a href="#">Tax Information</a></li>
+					</ul>
+				</section>
+				<section>
+					<h6>Security and Privacy</h6>
+					<ul>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms of Use and Sale</a></li>
+					</ul>
+				</section>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

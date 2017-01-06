@@ -1,0 +1,643 @@
+ /*----------- RESETS AND GENERALS-----------*/
+ body {
+ 	margin: 0;
+ 	padding: 0;
+ 	font: 62.5%/2 'Open Sans', sans-serif;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+ 	margin: 0;
+ 	font: 2em 'Crete Round', serif;
+ }
+
+ a {
+ 	text-decoration: none;
+ 	color: #f00;
+ }
+
+ ul {
+ 	list-style: none;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ button:focus {
+ 	outline: none;
+ }
+
+ .container {
+ 	width: 90%;
+ 	margin: 0 auto;
+ }
+
+ .container::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+ /*----------- NAVIGATION -----------*/
+
+nav {
+	position: relative;
+}
+
+nav h1 {
+	width: 200px;
+	float: left;
+	font-size: 2em;
+	padding: 5px;
+}
+
+nav a {
+	color: #337ab7;
+	font-size: 1.5em;
+	display: block;
+}
+
+nav a:hover {
+	color: #FF9B42;
+}
+
+nav ul {
+	float: right;	
+}
+
+nav ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav li {
+	float: left;
+	padding: 10px;
+	position: relative;
+}
+
+nav .signin {
+	background: #FF9B42; /* orange for buttons */
+	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
+	margin: 5px 0 5px 0;
+}
+
+.signin:hover {
+	background: #FF9B42;
+}
+
+nav .signin:last-child a {
+	color: white;
+}
+
+/* drop down on for accounts */
+
+li ul {
+	display: none;
+	position: absolute;
+	background: #FF9B42;
+	width: 150px;
+	top: 100%;
+	left: -48px;
+	border-radius: 5px 0 5px 5px;
+}
+
+li ul a {
+	color: black;
+	display: block;
+	padding: 10px;
+	width: 130px;
+}
+
+li ul a:hover {
+	background: #FB8421;
+}
+
+li ul li {
+	padding: 0;
+}
+
+nav .account {
+	background: #FF9B42; /* orange for buttons */
+	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
+	margin: 5px 0 5px 0;
+}
+
+.account a {
+	color: white;
+}
+
+.account a:hover {
+	color: white;
+}
+
+.account:hover {
+	background: #FF9B42;
+	border-radius: 5px 5px 0 0;
+}
+
+.account:hover ul {
+	display: block;
+}
+
+/*----------- MODAL -----------*/
+#overlay {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: none;
+}
+
+#loginform {
+	background: none;
+	width: 380px;
+	float: left;
+	padding: 10px 0 10px 10px;
+	margin: 10px 0 10px 10px;
+	border-right: 1px solid #ccc;
+}
+
+#registerform {
+	background: none;
+	width: 250px;
+	float: left;
+	padding: 10px 0 10px 10px;
+	margin: 10px 0 10px 10px;
+}
+
+#modal label {
+	font-size: 1.5em;
+}
+
+#modal input {
+	height: 25px;
+	width: 80%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#modal button {
+	background: #FF9B42; /* orange for buttons */
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	height: 40px;
+	width: 100px;
+	font-size: 1.6em;
+	color: white;
+	cursor: pointer
+}
+
+#modal button:hover {
+	background: #FB8421;
+}
+
+#modal {
+	width: 782px;
+	background: white;
+	box-shadow: 0 0 10px #000;
+	border-radius: 10px;
+	overflow: hidden;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -400px;
+	z-index: 2;
+	display: none;
+}
+
+#modal::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#modal .close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+
+ /*----------- FOOTER -----------*/
+
+footer {
+	background: #666;
+	color: white;
+	padding: 10px;
+	position: relative;
+	bottom: 0;
+}
+
+footer section {
+	width: calc(100% / 3 - (6rem / 3));
+	float: left;
+	text-align: center;
+}
+
+footer section:not(:nth-of-type(3n)) {
+	margin-right: 3rem;
+}
+
+footer a {
+	color: white;
+	padding-bottom: 3px;
+	font-size: 1.3em;
+}
+
+footer a:hover {
+	color: #FB8421;
+	text-decoration: none;
+}
+
+footer h6 {
+	font-size: 1.7em;
+	color: white;
+}
+
+/*----------- HOMEPAGE HEADER -----------*/
+
+#homepage {
+	background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../assets/images/bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+#homepage form h1 {
+	font-size: 5em;
+	color: white;
+	text-align: center;
+}
+
+#homepage form p {
+	color: white;
+	font-style: italic;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+#homepage form {
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: rgba(22, 73, 0, .5);
+}
+
+#homepage form input {
+	width: 700px;
+	height: 40px;
+	border: none;
+	border-radius: 5px 0 0 5px;
+	font-style: italic;
+	font-size: 2em;
+	margin-top: 20px;
+	padding-left: 5px;
+}
+
+#homepage form button {
+	height: 42px;
+	width: 70px;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	background: #FF9B42;
+	color: white;
+	font-size: 2em;
+	cursor: pointer;
+	margin-left: -50px;
+}
+
+#homepage form button:hover {
+	background: #FB8421;
+}
+
+/*----------- HOMEPAGE LANDING -----------*/
+
+#info article {
+	width: calc(100% / 3 - (6rem / 3));
+	float: left;
+	margin-top: 50px;
+}
+
+#info article:not(:nth-of-type(3n)) {
+	margin-right: 3rem;
+}
+
+#info .container {
+	text-align: center;
+}
+
+#info img {
+	border-radius: 50%;
+}
+
+#info h2 {
+	font-size: 2.5em;
+}
+
+#info p {
+	font-size: 1.4em;
+}
+
+.shop {
+	color: #447E08;
+}
+
+.eat {
+	color: #FF9B42;
+}
+.share {
+	color: #6A3EBB;
+}
+
+/*----------- DASHBOARD PAGE HEADER -----------*/
+
+#dashboardHead {
+	background: url('../assets/images/recipebg.jpg');
+	background-position: center center;
+	background-size: cover;
+	height: 300px;
+}
+
+#dashboardHead section {
+	background: rgba(247, 252, 250, .75);
+	width: 400px;
+	padding: 20px 10px;
+}
+
+#dashboardHead h1 {
+	font-size: 4em;
+}
+
+#featured {
+	width: 70%;
+	margin: 0 auto;
+	background: white;
+	border: 3px solid #ccc;
+	padding: 10px;
+	margin-top: -50px;
+}
+
+/* --------- DASHBOARD FEATURED --------- */
+
+#prev {
+	float: left;
+	margin: 100px 130px 0 0;
+}
+
+#featured button {
+	background: #FF9B42; /* orange for buttons */
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	height: 40px;
+	width: 100px;
+	font-size: 1.6em;
+	color: white;
+	cursor: pointer
+}
+
+#featured button:hover {
+	background: #FB8421;
+}
+
+#featured section {
+	float: left;
+	width: 300px;
+	margin-top: 30px;
+}
+
+.image {
+	float: left;
+	margin-right: 30px;
+}
+
+#next {
+	float: right;
+	margin-top: 100px;
+}
+
+#featured::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#featured h2 {
+	font-size: 3em;
+	margin-bottom: 20px;
+	color: #337ab7;
+	text-align: center;
+}
+
+#featured h3 {
+	color: #FF9B42;
+	font-size: 2.4em;
+}
+
+#featured p {
+	font-size: 1.5em;
+}
+
+#featured p span {
+	font-size: 1.2em;
+	color: #FF9B42;
+}
+
+
+/* --------- MY RECIPIES HEADER -------- */
+#myRecipesHead {
+	background: url('../assets/images/myRecipes.jpg');
+	background-position: center center;
+	background-size: cover;
+	height: 300px;
+}
+
+#myRecipesHead section {
+	background: rgba(247, 252, 250, .75);
+	width: 200px;
+	padding: 20px;
+}
+
+#myRecipesHead h1 {
+	font-size: 4em;
+}
+
+
+/* ----------- ACTUAL RECIPES SECTION ----------*/
+#recipes::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#recipes {
+	margin-top: 20px;
+}
+
+#recipes article {
+	border: 3px solid #ccc;
+	border-radius: 5px;
+	margin: 20px 25px 20px 0;
+	padding: 20px;
+	width: calc(90% / 3 - (6rem / 3));
+	float: left;
+	background: #FEFCFF;
+}
+
+
+#recipes article h3 {
+	color: #337ab7;
+	font-size: 2em;
+}
+
+#recipes article p {
+	font-size: 1.4em;
+}
+
+#recipes span {
+	color: #FF9B42;
+	font-weight: bold;
+}
+
+.btn {
+	background: #FF9B42; /* orange for buttons */
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	height: 40px;
+	width: 120px;
+	font-size: 1.6em;
+	color: white;
+	cursor: pointer;
+	display: block;
+}
+
+.deletebtn, .editbtn {
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+	height: 40px;
+	width: 100px;
+	font-size: 1.4em;
+	color: white;
+	cursor: pointer;
+	display: inline;
+	margin-right: 20px;
+}
+
+.deletebtn {
+	background: #C14446;
+}
+
+.editbtn {
+	background: #A4CD6A;
+}
+
+#newRecp {
+	margin-bottom: 20px
+}
+
+#addbutton {
+	width: 100px;
+	background: #A4CD6A;
+}
+
+.btn:hover {
+	background: #FB8421;
+}
+
+#recpForm {
+	width: 600px;
+}
+
+#recpForm label {
+	font-size: 1.5em;
+}
+
+
+#recpForm input[type=text], input[type=textarea] {
+	height: 25px;
+	width: 300px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: .8em;
+	padding: 5px;
+}
+
+input[type=textarea] {
+	height: 50px;
+}
+
+/* ----------- ACCOUNT SETTINGS FORM AND HEADING ----------*/
+
+#accountHead section {
+	background: rgba(247, 252, 250, .75);
+	width: 325px;
+	padding: 20px;
+}
+
+#accountHead {
+	background: url('../assets/images/accountbg.jpg');
+	background-position: center center;
+	background-size: cover;
+	height: 300px;
+}
+
+#accountHead h1 {
+	font-size: 4em;
+}
+
+#acctSettings form {
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	border: 3px solid #ccc;
+	border-radius: 5px;
+	margin-top: -50px;
+	background: white;
+	padding: 20px;
+}
+
+#acctSettings label {
+	font-size: 1.8em;
+}
+
+#acctSettings input {
+	height: 25px;
+	width: 300px;
+	font-size: 1em;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+#em {
+	padding-right: 45px;
+}
+
+#pass {
+	padding-right: 10px;
+}
+
+#acctSettings button {
+	width: 140px;
+}
+
+

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link href="https://fonts.googleapis.com/css?family=Crete+Round|Open+Sans" rel="stylesheet">
+  		<link rel="stylesheet" href="css/main.css">
+		<title>RecipeBox</title>
+	</head>
+	<body>
+		
+		<nav>
+			<div class="container">
+				<h1><a href="index.html" class="brand">RecipeBox</a></h1>
+				<ul>
+					<li><a href="#">Shop Online</a></li>
+					<li><a href="#">Recipes</a></li>
+					<li><a href="#">Meal Plans</a></li>
+					<li class="signin"><a href="#" class="modalClick">Sign in / Register</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- MODAL -->
+		<div id="overlay">
+            <div id="modal">
+            	<span class="close">X</span>
+            	<form id="loginform">
+            		<h3>Already a member?</h3>
+            		<p><label>Username: 
+            		<input type="text" title="Enter your username" id="user" name="signinButton" required />
+            		</label></p>
+            		
+            		<p><label>Password: 
+            		<input type="password" title="Enter your password" id="pass" name="signinButton" required />
+            		</label></p>
+            		 
+            		<button type="button" name="signinButton" id="signin">Log in </button>
+            	</form>
+
+            	<form id="registerform">
+            		<h3>New to RecipeBox? Register now!</h3>
+            		<p><label>First Name: 
+            		<input type="text" title="Enter your first name" id="firstname" name="firstname" required />
+            		</label></p>
+            		<p><label>Last Name: 
+            		<input type="text" title="Enter your last name" id="lastname" name="lastname" required />
+            		</label></p>
+            		<p><label>Username: 
+            		<input type="text" title="Enter your username" id="username" name="username" required />
+            		</label></p>
+            		<p><label>Email: 
+            		<input type="email" title="Enter your email" id="email" name="email" required />
+            		</label></p>
+            		<p><label>Password: 
+            		<input type="password" title="Enter your password" id="password" name="password" required />
+            		</label></p>
+            		 
+            		<button type="button" name="registerbutton" id="register">Register</button>
+            	</form>
+             
+            </div> <!-- close modal -->
+        </div>
+		<header id="homepage">
+			<form>
+				<h1>RecipeBox</h1>
+				<input type="text" placeholder="Search for recipes, products or meal plans" />
+				<button type="button">Go</button>
+				<p>Shop for goods, find recipies and create meal plans to begin your healthy living journey</p>
+			</form>
+		</header>
+		<section id="info">
+			<div class="container">
+				<article>
+					<img src="assets/images/shop.jpg" />
+					<h2 class="shop">Shop</h2>
+					<p>Shop our online store for a wide variety of all organic products. Have items delivered directly to your door, or find where they can be found in a store near you!</p>
+				</article>
+				<article>
+					<img src="assets/images/eat.jpg">
+					<h2 class="eat">Eat</h2>
+					<p>Cook something you and the whole family can enjoy using nothing but the best and most fresh products out there. Being organic does not mean you have to sacrifice flavor!</p>
+				</article>
+				<article>
+					<img src="assets/images/share.jpg" >
+					<h2 class="share">Share</h2>
+					<p>Share your favorite recipes or search for ideas through our recipes page! Create custom meal plans that you and the community can enjoy as well on your journey to a healthier lifestyle!</p>
+				</article>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<section>
+					<h6>Services and Support</h6>
+					<ul>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Sales Information</a></li>
+						<li><a href="#">Product Recalls</a></li>
+					</ul>
+				</section>
+				<section>
+					<h6>Shipping and Returns</h6>
+					<ul>
+						<li><a href="#">Shipping Policy</a></li>
+						<li><a href="#">Online Returns</a></li>
+						<li><a href="#">Return Policy</a></li>
+						<li><a href="#">Tax Information</a></li>
+					</ul>
+				</section>
+				<section>
+					<h6>Security and Privacy</h6>
+					<ul>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms of Use and Sale</a></li>
+					</ul>
+				</section>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
