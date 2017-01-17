@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<ul>
+		{% for row in data %}
+		<li class="{{ loop.cycle('odd', 'even')}}">{{row[1]}} 
+		<a href="/editform/{{row[0]}}">Edit | </a>
+		<a href="/delete/{{row[0]}}">Delete</a></li>
+		{%endfor%}
+	</ul>
+
+	<a href="/form">Add fruit</a>
+
+</body>
+</html>
