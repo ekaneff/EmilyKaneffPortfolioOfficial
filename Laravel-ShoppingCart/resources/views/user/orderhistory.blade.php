@@ -1,0 +1,39 @@
+@extends('layouts.master')
+
+@section('title')
+	The Bike Shop | Order History
+@endsection
+
+@include('partials.nav')
+
+<div class="container order-history">
+<h1>Order History</h1>
+@for ($i = 1; $i < $count; $i++)
+     <div class="row cart">
+         <h2>Order #{{ $i }}</h2>
+        @foreach ($orders as $order)
+            @if ($order['orderNumber'] == $i)
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        @for ($f = 0; $f < count($products); $f++)
+                            @if ($products[$f]['id'] == $order['product_id'])
+                              <img src="{{ $products[$f]['imgPath'] }}" class="img-responsive" alt="...">
+                              <div class="caption">
+                                <h3><a href="#">{{ $products[$f]['name'] }}</a></h3>
+                                <div class="clearfix">
+                                    <div class="pull-left">
+                                    <div class="price">${{ $products[$f]['price'] }}.00</div>
+                                    <div class="quantity">Quantity: {{ $order['quantity'] }}</div>
+                                    </div>
+                                </div>
+                              </div>
+                            @endif
+                        @endfor 
+                    </div>
+                </div>
+            @endif
+        @endforeach  
+    </div>
+@endfor
+</div>
+
