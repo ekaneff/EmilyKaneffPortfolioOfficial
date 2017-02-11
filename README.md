@@ -26,10 +26,23 @@ I was again the sole designer and developer, and the timeline was about four wee
 
 ##PHP Microframework
 
+This project was a four-week long process where, through research on other frameworks and vanilla PHP, we were expected to make a very basic micro framework. This was my first time getting my hands in PHP, and it also served as my introduction to the file structure that is found in other frameworks and applications that use MVC. It was the first time I was exposed to routing and actually having separate files and folders for each model, view and controller. Within this framework, there is implementation of two different APIs, those being Stack Overflow and Google books. Google OAuth was also included as well as a captcha on the form. Design was not the focus here, since there needed to be more of a focus on functionality. 
 
+##Python CRUD
 
+For this project, we were given 24 hours to research and make a Python CRUD application using the Flask framework. The design is basic but the functionlaity is there. 
 
+##RecipeBox
 
+This project was my first introduction to using AJAX in order to talk to PHP files that connected to a SQL database. I was given a timeline of about 24 hours to create a full CRUD application that used the database to store information through the files in an xhr file. Design concepts were also used here since this was a project I had decided to build onto instead of creating something completely new. All interactions were made without a responsive framework, as well.  
+
+##IndieSpot
+
+IndieSpot was created from the general requirement of “build a website for a movie theatre”. Since design was the focus, not everything on the site is functional, but the user is able to select the “Captain Fantastic” movie to see details on that film, as well as the “Quinten Tarantino Marathon” event to view details on that event. It is fully responsive and no responsive frameworks were used. I had a timeline of about 48 hours to complete this project. 
+
+##Node RecipeBox
+
+This version of the RecipeBox project was done completely in Node.js using MongoDB as the database. With a timeline of about a week and a half, I was able to replicate the design similar to the original RecipeBox design as well as make it fully CRUD. There is also a “save” functionality where a user can save recipes to a temporary list that can be accessed regardless of whether they are logged in or not. There is also user log in/registration that I programmed myself. 
 
 
 
